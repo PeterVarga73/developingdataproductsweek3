@@ -1,0 +1,37 @@
+---
+title: "Plotly and Presentation for week 3"
+author: "Peter Varga"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: ioslides_presentation
+---
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+
+## ToothGrowth 
+
+ToothGrowth data set contains the result from an experiment studying the effect of vitamin C on tooth growth in 60 Guinea pigs. Each animal received one of three dose levels of vitamin C (0.5, 1, and 2 mg/day)
+
+for more info:
+<https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/ToothGrowth.html>
+
+## Tooth length and daily vitamin C intake
+
+```{r , warning=FALSE, message=FALSE, echo=FALSE}
+
+library(plotly)
+
+p<-plot_ly(ToothGrowth, y = ~len, color=~factor(dose), type = "box")
+layout(p, xaxis = list(title = "Vitamin C (mg/day)"), yaxis=list(title="Tooth length"))
+
+```
+
+
+
+
+## Thank you!
