@@ -1,7 +1,7 @@
 ---
 title: "Plotly and Presentation for week 3"
 author: "Peter Varga"
-date: "`r format(Sys.time(), '%d %B, %Y')`"
+date: "4 March 2019"
 output: ioslides_presentation
 ---
 
@@ -19,6 +19,9 @@ ToothGrowth data set contains the result from an experiment studying the effect 
 
 for more info:
 <https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/ToothGrowth.html>
+
+**The plot on next slide doesn't work on Firefox. Please use Google Chrome or Internet Explorer!
+Thank you!**
 
 ## Tooth length and daily vitamin C intake
 
